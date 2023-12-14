@@ -1,0 +1,28 @@
+/* src/app/home/home.page.scss */
+
+page-home {
+  ion-content {
+    padding: 16px;
+  }
+
+  form {
+    ion-item {
+      margin-bottom: 16px;
+
+      ion-label {
+        font-weight: bold;
+      }
+
+      ion-input,
+      ion-select,
+      ion-toggle {
+        width: 100%;
+      }
+    }
+
+    ion-button {
+      margin-top: 24px;
+      width: 100%;
+    }
+  }
+}

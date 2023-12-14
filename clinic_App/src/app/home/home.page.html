@@ -1,0 +1,97 @@
+<!-- src/app/home/home.page.html -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Patient Information Form
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="patientForm" (ngSubmit)="submitForm()">
+    <ion-item>
+      <ion-label>Surname</ion-label>
+      <ion-input formControlName="surname" placeholder="Enter your surname" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>First Name</ion-label>
+      <ion-input formControlName="firstName" placeholder="Enter your first name" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Other Names</ion-label>
+      <ion-input formControlName="otherNames" placeholder="Enter your other names"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Patient No</ion-label>
+      <ion-input formControlName="patientNo" placeholder="Enter patient number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Date of Birth</ion-label>
+      <ion-input formControlName="dateOfBirth" type="date" placeholder="Select date of birth"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>ID No</ion-label>
+      <ion-input formControlName="idNo" placeholder="Enter ID number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select formControlName="gender" placeholder="Select gender">
+        <ion-select-option value="male">Male</ion-select-option>
+        <ion-select-option value="female">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>County</ion-label>
+      <ion-select formControlName="county" placeholder="Select a county">
+        <ion-select-option *ngFor="let county of counties" [value]="county.countyId">
+          {{ county.countyName }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mobile</ion-label>
+      <ion-input formControlName="mobile" type="tel" placeholder="Enter your mobile number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input formControlName="email" type="email" placeholder="Enter your email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Name of Alternative Contact Person</ion-label>
+      <ion-input formControlName="alternativeContactPerson" placeholder="Enter alternative contact person's name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Telephone</ion-label>
+      <ion-input formControlName="telephone" type="tel" placeholder="Enter telephone number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Has Disability</ion-label>
+      <ion-toggle formControlName="hasDisability"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Appointment Date</ion-label>
+      <ion-input formControlName="appointmentDate" type="date" placeholder="Select appointment date"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Appointment Time</ion-label>
+      <ion-input formControlName="appointmentTime" type="time" placeholder="Select appointment time"></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" expand="full">Submit</ion-button>
+  </form>
+</ion-content>

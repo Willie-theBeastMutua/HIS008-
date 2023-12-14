@@ -1,0 +1,7 @@
+{
+  "name": "clinic_App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
