@@ -1,9 +1,11 @@
 **Clinic Appointment Management App**
+
 Overview
 Welcome to the Clinic Appointment Management App! This application is designed to streamline and enhance the management of clinic appointments. Built on the Ionic framework, it utilizes MySQL as the database for storing appointment information. The app communicates with a JavaScript RESTful API to facilitate data exchange between the client and the server.
 
 Installation
 **Follow these steps to set up the Clinic Appointment Management App:**
+
 **Prerequisites:**
 
 Ensure you have Node.js and npm installed on your system.
@@ -37,6 +39,7 @@ Install API Dependencies:
 
 npm install
 **Configure the API:**
+
 Update the MySQL database credentials in the API configuration file.
 Adjust any other settings or configurations as needed.
 **Run the API:**
