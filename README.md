@@ -26,6 +26,8 @@ Run the App:
 
 
 ionic serve
+
+
 **Access the App:**
 
 Open your web browser and navigate to http://localhost:8100 to access the Clinic Appointment Management App.
@@ -38,12 +40,18 @@ cd path/to/api
 Install API Dependencies:
 
 npm install
+
+
 **Configure the API:**
 
 Update the MySQL database credentials in the API configuration file.
 Adjust any other settings or configurations as needed.
+
+
 **Run the API:**
 
 npm start
+
+
 **Access the API:**
 The API will be accessible at http://localhost:3000. Update the app's configuration to point to this URL for data exchange.
